@@ -28,7 +28,7 @@ function Detail() {
       ) : (
         <div>
           <div className="home_button">
-            <a className="home_button-href" href="/">
+            <a className="home_button-href" href="/my-first-react">
               HOME
             </a>
           </div>
