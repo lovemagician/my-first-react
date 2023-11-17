@@ -1,0 +1,12 @@
+.main {
+  background-color: black;
+}
+.home_button {
+  padding: 20px;
+}
+
+.home_button-href {
+  color: white;
+  text-decoration-line: none;
+  font-weight: 800;
+}

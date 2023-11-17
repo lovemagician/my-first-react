@@ -1,0 +1,28 @@
+.movies {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+}
+.poster {
+  margin-right: 30px;
+  height: 1000px;
+}
+.title {
+  display: block;
+  text-decoration-line: none;
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.summary {
+  color: white;
+  margin-bottom: 10px;
+}
+.genres {
+  display: flex;
+  justify-content: left;
+  margin-top: 100px;
+  color: white;
+  font-size: 10px;
+}
