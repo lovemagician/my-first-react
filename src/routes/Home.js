@@ -21,11 +21,11 @@ function Home() {
   return (
     <div className="main">
       {loading ? (
-        <div className="loading">
+        <div className="loading-white">
           <h1>Loading...</h1>
         </div>
       ) : (
-        <div>
+        <div className="movies">
           {movies.map((movie) => (
             <Movie
               key={movie.id}

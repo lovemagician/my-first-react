@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Movie from "../components/Movie";
+import MovieInfo from "../components/MovieInfo";
 import "../css/home.css";
 
 function Detail() {
@@ -11,16 +11,14 @@ function Detail() {
     const json = await (
       await fetch(`https://yts.mx/api/v2/movie_details.json?movie_id=${id}`)
     ).json();
-    console.log(json.data.movie);
     setMovie(json.data.movie);
-
     setLoading(false);
   };
   useEffect(() => {
     getMovie();
   }, []);
   return (
-    <div className="main">
+    <div className="movieInfo-main">
       {loading ? (
         <div className="loading">
           <h1>Loading...</h1>
@@ -35,12 +33,11 @@ function Detail() {
               HOME
             </a>
           </div>
-          <Movie
-            key={movie.id}
+          <MovieInfo
             id={movie.id}
             coverImg={movie.medium_cover_image}
             title={movie.title}
-            summary={movie.summary}
+            description={movie.description_full}
             genres={movie.genres}
           />
         </div>

@@ -8,3 +8,14 @@
   width: 100vw;
   height: 100vh;
 }
+
+.loading-white {
+  font-size: 100px;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}

@@ -1,5 +1,6 @@
 .main {
-  background-color: black;
+  background-color: white;
+  overflow-x: hidden;
 }
 .home_button {
   padding: 20px;
